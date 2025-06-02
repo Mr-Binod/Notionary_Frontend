@@ -25,6 +25,7 @@ const fadeUp = keyframes`
 
 const FeedWrapper = styled.div`
   max-width: 1280px;
+  width: 1280px;
   margin: 0 auto 12px;
   margin-left: 80px;
   padding: 32px 16px;
@@ -45,7 +46,7 @@ const FeedWrapper = styled.div`
 const AnimatedCardWrapper = styled.div`
   animation: ${fadeUp} 0.5s ease forwards;
   opacity: 0;
-  width: 680px;
+  width: 1200px;
 `;
 
 const LoadingContainer = styled.div`
@@ -289,7 +290,7 @@ useEffect(() => {
                 post_id={post.post_id}
                 category_id={category.category_id}
                 hearts={post.Hearts || []}
-                parent_id={post.Workspacectgr?.parent_id || "보이니?"}
+                parent_id={post.Workspacectgr?.parent_id || ""}
                 workspaceCtgrName={
                   post.Workspacectgr?.workspacectgrs_name ||
                   "워크 스페이스 없음"

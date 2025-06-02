@@ -598,7 +598,7 @@ const Sidebarcontent = ({ contents, setState, setContent }) => {
                           {popupwrap ? (
                         <Popwrap>
                           <Popupbodyone>
-                            <div>삭체하세겠습니까 ??</div>
+                            <div>삭제하시겠습니까 ?</div>
                             <div>
                               <button className='cancelbtn'
                                 onClick={(e) => {
