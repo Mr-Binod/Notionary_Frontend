@@ -23,6 +23,7 @@ function App() {
       <BrowserRouter>
       <Header />
       <Sidebar /> 
+      
         <Routes>
           <Route
             path="/workspace/selectspace/:workspacename/:foldername/:filename"

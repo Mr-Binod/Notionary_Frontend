@@ -13,8 +13,9 @@ const fadeUp = keyframes`
 `;
 
 const FeedWrapper = styled.div`
-  max-width: 680px;
-  margin: 0 auto;
+  max-width: 1280px;
+  margin: 0 auto 12px;
+  margin-left: 80px;
   padding: 32px 16px;
   display: flex;
   flex-direction: column;
@@ -150,7 +151,7 @@ const PostList = ({ posts: externalPosts }) => {
           const subCategoryName = isTopEtc ? "" : category.category_name;
           const workspacePages = JSON.parse(post.workspace_pages)
           const result = workspaceDatas
-            .filter(item => workspacePages.includes(item.workspace_id))
+            .filter(item => workspacePages?.includes(item.workspace_id))
             .map(item => item.workspacesubctgrs_name);
           console.log('type11', result, 'sdfd', workspacePages)
           return (

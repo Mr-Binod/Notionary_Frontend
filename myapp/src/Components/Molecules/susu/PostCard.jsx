@@ -10,8 +10,8 @@ import fullheart from '../../../images/icons/fullheart.png';
 import { redirect } from 'react-router-dom';
 
 const CardBlock = styled.div`
-  width: 100%;
-  max-width: 600px;
+  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto 12px;
   box-sizing: border-box;
 `;

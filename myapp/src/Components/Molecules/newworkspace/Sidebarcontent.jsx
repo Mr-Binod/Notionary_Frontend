@@ -543,7 +543,7 @@ const Sidebarcontent = ({ contents, setState, setContent }) => {
                               <button className='cancelbtn'
                                 onClick={(e) => {
                                   e.stopPropagation()
-                                  setPopupwrap(false)
+                                  setPopupwrapfolder(false)
                                 }}
                               >취소</button>
                               <button className='submitbtn'
@@ -551,6 +551,7 @@ const Sidebarcontent = ({ contents, setState, setContent }) => {
                                   e.stopPropagation()
                                   DelWorkspace(delfolder.mainTitle, delfolder.folderTitle)
                                   setState(true)
+                                  setContent([{ "개인 워크스페이스": [] }])
                                   setPopupwrapfolder(false)
                                   navigate('/main')
                                 }}
@@ -583,6 +584,8 @@ const Sidebarcontent = ({ contents, setState, setContent }) => {
                               pageTitle,
                               entryIndex
                             );
+                            dispatch({type : "True"})
+                            setState(true)
                             setIsprivateopen(prev => prev)
                           }}
                         >
